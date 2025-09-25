@@ -11,7 +11,7 @@ function Leaderboard() {
 
   return (
 	  <div className="relative min-h-screen bg-gradient-to-r from-cyan-500/50 to-blue-500/50 text-white flex flex-col items-center justify-center space-y-12 p-10">
-		<a className="text-base text-xl opacity-50 font-arcade z-0">ft_transcendence</a>
+		<Link to="/" className="text-base text-xl opacity-50 font-arcade z-0">ft_transcendence</Link>
 
 		<div className="font-arcade">
 			<input type="checkbox" id="menu-toggle" className="hidden peer"></input>
@@ -31,9 +31,9 @@ function Leaderboard() {
 			<div className="fixed top-25 bottom-40 left-8 w-40 bg-gradient-to-b from-violet-500/50 to-fuchsia-500/50 rounded-xl shadow-md transform -translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-40">
 				<nav className="flex flex-col my-35 space-y-15 justify-items-center auto-cols-auto	">
 
-					<a href="Home.tsx" className="flex p-1 mx-1 text-orange-300/80 font-arcade text-xl justify-center hover:scale-110 hover:shadow-xl transition">				Home</a>
-					<a href="Test.tsx" className="flex p-1 text-orange-300/80 font-arcade text-xl justify-center hover:scale-110 hover:shadow-xl transition">Test</a>
-					<a href="/about.html" className="flex p-1 text-orange-300/80 font-arcade text-xl justify-center hover:scale-110 hover:shadow-xl transition">about</a>
+					<Link to="/x" className="flex p-1 mx-1 text-orange-300/80 font-arcade text-xl justify-center hover:scale-110 hover:shadow-xl transition">Home</Link>
+					<Link to="/Test" className="flex p-1 text-orange-300/80 font-arcade text-xl justify-center hover:scale-110 hover:shadow-xl transition">Test</Link>
+					<Link to="/Profile" className="flex p-1 text-orange-300/80 font-arcade text-xl justify-center hover:scale-110 hover:shadow-xl transition">Profile</Link>
 					<Link to="/Ladder" className="flex p-1 text-orange-300/80 font-arcade text-xl justify-center hover:scale-110 hover:shadow-xl transition">Ladder</Link>
 				</nav>
 			</div>
@@ -61,12 +61,8 @@ function Leaderboard() {
       </div>
 
       {/* Bouton retour */}
-      <a
-        href="/Home.tsx"
-        className="mt-10 px-6 py-3 rounded-full bg-pink-200 dark:bg-black-950 text-2xl text-white font-bold shadow-xl hover:bg-yellow-500 hover:scale-110 hover:italic hover:shadow-inner hover:outline hover:outline-4 hover:outline-cyan-500 transition"
-      >
-        ⬅ Retour
-      </a>
+      <Link to="/" className="mt-10 px-6 py-3 rounded-full bg-pink-200 dark:bg-black-950 text-2xl text-white font-bold shadow-xl hover:bg-yellow-500 hover:scale-110 hover:italic hover:shadow-inner hover:outline hover:outline-4 hover:outline-cyan-500 transition">
+        ⬅ Retour</Link>
     </div>
   )
 }

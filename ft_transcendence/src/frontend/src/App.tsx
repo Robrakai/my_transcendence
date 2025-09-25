@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 import Home from "@/pages/Home"
 import Test from "@/pages/Test"
+import Profile from "@/pages/Profile"
 import Ladder from "@/pages/Ladder"
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/test" element={<Test />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/ladder" element={<Ladder />} />
         </Routes>
       </BrowserRouter>
