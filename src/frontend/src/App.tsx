@@ -5,6 +5,7 @@ import Home from "@/pages/Home"
 import Test from "@/pages/Test"
 import Profile from "@/pages/Profile"
 import Ladder from "@/pages/Ladder"
+import Game from "@/../../Game/main"
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path="/test" element={<Test />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/ladder" element={<Ladder />} />
+		  <Route path="/game" element={<Game />} />
+
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
