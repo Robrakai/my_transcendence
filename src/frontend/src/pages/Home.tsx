@@ -1,7 +1,17 @@
 import { Button } from "@/components/ui/button"
 import { Link } from "react-router-dom"
+import { Background } from "../../Game/background";
+import { useEffect } from "react";
+
 
 function Home() {
+
+  useEffect(() => {
+    const game = new Background();
+    game.start();
+  }, []);
+
+
   return (
     <div className="min-h-screen w-full bg-gradient-to-r from-cyan-500/50 to-blue-500/50 ">
       	<Link to="/" className="text-base text-xl font-arcade z-50">ft_transcendence</Link>
@@ -54,5 +64,5 @@ function Home() {
 	</div>
 	)
 }
-
 export default Home
+

@@ -5,7 +5,7 @@ import Home from "@/pages/Home"
 import Test from "@/pages/Test"
 import Profile from "@/pages/Profile"
 import Ladder from "@/pages/Ladder"
-import Game from "@/../../Game/main"
+import Game from "@/pages/Game"
 
 function App() {
   return (

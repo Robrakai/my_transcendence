@@ -1,5 +1,5 @@
-import { initGame } from "./game";
+import { Game } from "./game";
 
 document.addEventListener("DOMContentLoaded", () => {
-  initGame();
+  Game();
 });
