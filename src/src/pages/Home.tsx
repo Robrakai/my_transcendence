@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-r from-cyan-500/50 to-blue-500/50 ">
-      	<Link to="/" className="text-base text-xl font-arcade z-50">ft_transcendence</Link>
+      	<Link to="/" className="text-base text-cyan-300/70 text-xl font-arcade z-50">ft_transcendence</Link>
 
 		<div>
 			<input type="checkbox" id="menu-toggle" className="hidden peer"></input>
@@ -48,7 +48,7 @@ function Home() {
 
 
 		<div className="absolute top-10 right-20 z-10">
-			<Button onClick={() => alert("Hello !")} />
+			<Button className=" rounded-xl bg-yellow-500/80" onClick={() => alert("Hello !")} >|      |</Button>
 		</div>
 
 		<div className="flex flex-col items-center">
@@ -58,7 +58,7 @@ function Home() {
 			<div className="fixed inset-0 bg-black/60 peer-checked:hidden transition z-40"></div>
 
 			<a className="text-base text-2xl text-[#6fc8dc] translate-y-100 font-arcade transition-transform duration-1700 peer-checked:-translate-y-400 z-45">W E L C O M E</a>
-			<Link to="/game" className="flex rounded-full items-center translate-y-300 justify-center w-128 z-10 transition ease-in-out  bg-pink-200 font-bold p-5 shadow-2xl text-white text-2xl font-arcade dark:bg-black-950  hover:bg-yellow-500 hover:italic hover:text-white-500 hover:shadow-inner hover:outline hover:ouline-4 hover:scale-110 hover:outline-cyan-500 hover:backdrop-blur  transition-transform duration-1700 peer-checked:translate-y-100"> PLAY </Link>
+			<Link to="/game" className="flex rounded-full items-center translate-y-300 justify-center w-128 z-10 transition ease-in-out  bg-pink-300/90 font-bold p-5 shadow-xl text-white text-2xl font-arcade dark:bg-black-950  hover:bg-yellow-500/90 hover:italic hover:text-white-500 hover:shadow-inner hover:outline hover:ouline-8 hover:scale-110 hover:outline-rose-400/80 transition-transform duration-1700 peer-checked:translate-y-100"> PLAY </Link>
 		</div>
 
 	</div>

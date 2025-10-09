@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Engine, Scene, HemisphericLight, MeshBuilder, Vector3, FreeCamera, StandardMaterial, Color4, PhysicsImpostor, HavokPlugin, PhysicsAggregate, PhysicsShapeType, } from "@babylonjs/core";
 // import * as BABYLON from "@babylonjs/core";
 import  HavokPhysics from "@babylonjs/havok";
-// import havokWasmUrl from "@babylonjs/havok/lib/esm/HavokPhysics.wasm";
+// import havokWasmUrl from "@babylonjs/havok/lib/esm/HavokPhysics.wasm?url";
 
 // const havokInstance = await HavokPhysics({
 //   locateFile: (HavokPhysics) => {
