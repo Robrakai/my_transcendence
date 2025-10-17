@@ -25,10 +25,19 @@ export default function LoginPage() {
 			className="animate-draw"
 			/>
 		</svg> */}
-		<Link to="/" className="text-base text-cyan-300/70  text-xl font-arcade z-50">ft_transcendence</Link>
+
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14" className="absolute bottom-0 left-0 w-full z-0">
+			<path d="M 0 7 L 9 14 Z M 15 0 L 24 7 Z" stroke="#e95d2c" stroke-width="0.03" fill="none" className="animate-draw"/>
+		</svg>	
+
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 14" className="absolute bottom-0 left-0 w-full blur-xs z-0">
+			<path d="M 0 7 L 9 14 Z M 15 0 L 24 7 Z" stroke="#e95d2c" stroke-width="0.05" fill="none" className="animate-draw"/>
+		</svg>
+
+		<Link to="/" className="text-base text-cyan-300/70  text-xl hover:shadow-lg font-arcade z-50">ft_transcendence</Link>
 
 		<div className="flex min-h-screen items-center justify-center ">
-			<form onSubmit={handleSubmit} className="bg-gradient-to-r from-[#45586c] to-[#424048] p-8 rounded-lg shadow-lg w-80">
+			<form onSubmit={handleSubmit} className="bg-gradient-to-r from-[#45586c] to-[#424048] p-8 rounded-lg shadow-xl shadow-cyan-500/30 w-80">
 			<h2 className="text-2xl font-arcade text-center mb-6 text-slate-300">
 				connexion
 			</h2>
