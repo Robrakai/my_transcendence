@@ -7,6 +7,7 @@ import Profile from "@/pages/Profile"
 import Ladder from "@/pages/Ladder"
 import Game from "@/pages/Game"
 import Login from "@/pages/login"
+import SignIn from "@/pages/SignIn"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/ladder" element={<Ladder />} />
 		  <Route path="/login" element={<Login />} />
+		  <Route path="/sigIn" element={<SignIn />} />
 		  <Route path="/game" element={<Game />} />
 
         </Routes>
