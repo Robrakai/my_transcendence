@@ -50,6 +50,8 @@ function Game() {
 		onScoreUpdate={(left, right) => {
 		setScoreLeft(left);
 		setScoreRight(right);
+		if(left == 18 )
+				return ; // return left ou right et le score
 		}}
 	/>
 
